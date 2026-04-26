@@ -21,6 +21,12 @@ services:
       - key: OPENCLAW_GATEWAY_TOKEN
         generateValue: true
 
+      - key: OPENCLAW_ALLOW_UNCONFIGURED
+        value: "true"
+        
+      - key: GATEWAY_MODE
+        value: "local"
+
       # GROQ via OpenAI-compatible API
       - key: OPENAI_API_KEY
         sync: false
